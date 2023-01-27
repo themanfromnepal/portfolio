@@ -172,6 +172,7 @@ a{
 }
 
 .project-desc{
+    text-align: center;
     font-size: .8rem;
     padding: .5rem;
 }
@@ -191,9 +192,53 @@ a{
     padding: 1rem;
     background-color: #333;
     border-radius: 1rem;
-}
-
-.hobbies li{
     font-size: 1.5rem;
 }
 
+
+
+
+@media (max-width: 991px){
+    .top{
+        flex-direction: column;
+    }
+
+    .profile-img{
+        height:15rem;
+    }
+
+    .top-about h2{
+        font-size: 2.5rem;
+    }
+
+    .main-program-icon{
+        flex-wrap: wrap;
+    }
+
+    .main-program-icon >div{
+        flex: 1 0 33.33%;
+    }
+
+    .main-project-cat{
+        flex-direction: column;
+    }
+
+    .project-desc{
+        font-size: 1rem;
+    }
+
+    .hobbies{
+        flex-direction: column;
+        font-size: 1rem;
+    }
+} 
+
+@media (max-width: 480px){
+    .top{
+        flex-direction: column;
+    }
+
+    .player-section{
+        width: 90%;
+    }
+} 
