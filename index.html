@@ -13,128 +13,221 @@
       src="https://kit.fontawesome.com/474446d157.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <title>Akash Phago</title>
   </head>
-  <body>
-    <div class="top">
-      <div class="top-image">
-        <img class="profile-img" src="profile.png" alt="" />
-      </div>
-
-      <div class="top-second">
-        <div class="top-about">
-          <h2>Hi, I am Akash Phago && I create websites.</h2>
-        </div>
-
-        <div class="top-links">
-          <a href="https://twitter.com/AkashPhago" target="_blank"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/akash-phago/" target="_blank"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/themanfromnepal" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
-
-        <a href="Resume_Akash Phago.pdf" download>
-          <div class="top-resume icon-desc" id="resume">
-            <i class="fa-solid fa-download"></i>
-            <p>RESUME</p>
+  <body class="container-fluid bg-dark text-white p-2">
+    <div class="d-flex flex-column gap-4">
+      <!-- Top -->
+      <div class="d-flex align-items-center justify-content-around p-2">
+        <img
+          src="profile.png"
+          alt="profile"
+          style="
+            height: 25rem;
+            filter: brightness(10%);
+            border-radius: 70%;
+            filter: drop-shadow(1mm 3mm 5mm rgba(208, 59, 59, 0.2));
+          "
+        />
+        <div class="d-flex flex-column gap-4">
+          <h1 class="fs-1">Hi, I am Akash Phago && I create websites.</h1>
+          <div class="d-flex justify-content-around align-items-center">
+            <a
+              class="text-decoration-none text-danger"
+              href="https://twitter.com/AkashPhago"
+              target="_blank"
+              ><i class="fa-brands fa-twitter display-5"></i
+            ></a>
+            <a
+              class="text-decoration-none text-danger"
+              href="https://www.linkedin.com/in/akash-phago/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin display-5"></i
+            ></a>
+            <a
+              class="text-decoration-none text-danger"
+              href="https://github.com/themanfromnepal"
+              target="_blank"
+              ><i class="fa-brands fa-github display-5"></i
+            ></a>
           </div>
-        </a>
+          <div class="d-flex align-items-center justify-content-center">
+            <a href="Resume_Akash Phago.pdf" download>
+              <button type="button" class="btn btn-danger gap-2 rounded-pill">
+                <i class="fa-solid fa-download fs-5 text-dark"></i>
+                <span class="fs-5">RESUME</span>
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="main">
-      <div class="main-program-icon">
-        <div class="icon-desc">
+      <!-- Mid -->
+      <!-- Skills -->
+      <div
+        class="d-flex align-items-center justify-content-around bg-white rounded-2 p-2"
+        style="width: 80vw; margin: auto"
+      >
+        <div
+          class="text-dark fs-5 d-flex flex-column align-items-center justify-content-center"
+        >
           <i class="icons fa-brands fa-html5"></i>
-          <p>HTML</p>
+          <span>HTML</span>
         </div>
-        <div class="icon-desc">
+        <div
+          class="text-dark fs-5 d-flex flex-column align-items-center justify-content-center"
+        >
           <i class="icons fa-brands fa-css3-alt"></i>
-          <p>CSS</p>
+          <span>CSS</span>
         </div>
-        <div class="icon-desc">
+        <div
+          class="text-dark fs-5 d-flex flex-column align-items-center justify-content-center"
+        >
           <i class="icons fa-brands fa-js"></i>
-          <p>JavaScript</p>
+          <span>JavaScript</span>
         </div>
-        <div class="icon-desc">
+        <div
+          class="text-dark fs-5 d-flex flex-column align-items-center justify-content-center"
+        >
           <i class="icons fa-brands fa-react"></i>
-          <p>React</p>
+          <span>React</span>
         </div>
-        <div class="icon-desc">
+        <div
+          class="text-dark fs-5 d-flex flex-column align-items-center justify-content-center"
+        >
           <i class="icons fa-brands fa-node"></i>
-          <p>Node.js</p>
+          <span>Node.js</span>
         </div>
-        <div class="icon-desc">
+        <div
+          class="text-dark fs-5 d-flex flex-column align-items-center justify-content-center"
+        >
           <i class="icons fa-solid fa-database"></i>
-          <p>MongoDB</p>
+          <span>MongoDB</span>
         </div>
-        <div class="icon-desc">
+        <div
+          class="text-dark fs-5 d-flex flex-column align-items-center justify-content-center"
+        >
           <i class="icons fa-solid fa-server"></i>
-          <p>Express</p>
+          <span>Express</span>
         </div>
       </div>
 
-      <div class="main-project">
-        <h2>Projects</h2>
+      <!-- Projects -->
+      <div>
+        <h2 class="text-center text-danger">Projects</h2>
+        <div class="row">
+          <div class="col-4">
+            <a
+              class="text-decoration-none text-white"
+              href="https://precious-piroshki-71b0af.netlify.app/"
+              target="_blank"
+            >
+              <div
+                class="d-flex flex-column p-2 border border-danger border-5 m-1"
+                style="min-height: 12rem"
+              >
+                <h2 class="text-center text-danger">React Note-Taker</h2>
+                <div>
+                  <span>
+                    React Note Taking App is built in React using TypeScript. It
+                    is built using react-bootsrap for styling with packages
+                    like:react-select, react-router-dom, uuid and
+                    react-markdown.
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a
+              class="text-decoration-none text-white"
+              href="https://nimble-macaron-22591e.netlify.app/"
+              target="_blank"
+            >
+              <div
+                class="d-flex flex-column p-2 border border-danger border-5 m-1"
+                style="min-height: 12rem"
+              >
+                <h2 class="text-center text-danger">Hangman Game</h2>
+                <div>
+                  <span>
+                    Hangman Game is built in React using TypeScript. The state
+                    of the app is maintained on session storage and please have
+                    fun playing it.
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a
+              class="text-decoration-none text-white"
+              href="https://gilded-conkies-847d44.netlify.app"
+              target="_blank"
+            >
+              <div
+                class="d-flex flex-column p-2 border border-danger border-5 m-1"
+                style="min-height: 12rem"
+              >
+                <h2 class="text-center text-danger">Creative Inc.</h2>
+                <div>
+                  <span>
+                    Responsive Landing page made with HTML and CSS. Hover
+                    Effect, element positioning, media querries etc. are used to
+                    achieve such goal in this project.
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-4">
+            <a
+              class="text-decoration-none text-white"
+              href="https://jazzy-vacherin-6526d3.netlify.app/"
+              target="_blank"
+            >
+              <div
+                class="d-flex flex-column p-2 border border-danger border-5 m-1"
+                style="min-height: 12rem"
+              >
+                <h2 class="text-center text-danger">Progress Tracker</h2>
+                <div>
+                  <span>
+                    Progress Tracker built in React using Vite. Zustand is used
+                    for state management of the app whereas Drag and Drop
+                    feature is used for User Interface.
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
 
-        <div class="main-project-cat">
-          <a href="https://precious-piroshki-71b0af.netlify.app/" target="_blank">
-            <div class="project">
-              <h2>React Note-Taker</h2>
-              <p class="project-desc" style="text-align: start;">
-                React Note Taking App is built in React using TypeScript. It is built using react-bootsrap for styling with packages like:
-                <ul class="project-list">
-                  <li>react-router-dom: for navigation purpose</li>
-                  <li>react-select: for creating dynamic select type input</li>
-                  <li>react-markdown: to display markdown files</li>
-                  <li>uuid : to create Unique id for tags and files</li>
-                </ul>
-              </p>
-            </div>
-          </a>
-
-          <a href="https://nimble-macaron-22591e.netlify.app/" target="_blank">
-            <div class="project">
-              <h2>Hangman Game</h2>
-              <p class="project-desc">Hangman Game in TypeScript - React App</p>
-            </div>
-          </a>
-          <a href="https://gilded-conkies-847d44.netlify.app" target="_blank">
-            <div class="project">
-              <h2>Creative Inc.</h2>
-              <p class="project-desc">
-                Responsive Landing page made with HTML and CSS.
-              </p>
-            </div>
-          </a>
-          <a href="https://jazzy-vacherin-6526d3.netlify.app/" target="_blank">
-            <div class="project">
-              <h2>Progress Tracker</h2>
-              <p class="project-desc">
-                Progress Tracker built in React using Vite. Zustand is used for state management of the app whereas JavaScript Drag and Drop feature is used for User Interface.
-              </p>
-            </div>
-          </a>
+      <!-- Bottom -->
+      <div class="d-flex flex-column gap-2">
+        <h2 class="text-center text-danger">Hobbies</h2>
+        <div
+          class="d-flex align-items-center justify-content-around text-danger"
+        >
+          <h2 class="border border-danger border-5 p-2">Jiu-Jitsu</h2>
+          <h2 class="border border-danger border-5 p-2">Drummer</h2>
+          <h2 class="border border-danger border-5 p-2">Cooking</h2>
+          <h2 class="border border-danger border-5 p-2">Travelling</h2>
         </div>
       </div>
     </div>
 
-    <div class="bottom">
-      <div class="hobbies-section">
-        <h2>Hobbies</h2>
-        <ul class="hobbies">
-          <li>Jiu-Jitsu</li>
-          <li>Drummer</li>
-          <li>Cooking</li>
-          <li>Travelling</li>
-        </ul>
-      </div>
-    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
